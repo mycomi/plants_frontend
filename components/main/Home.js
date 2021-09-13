@@ -42,7 +42,7 @@ function Home(props) {
     
     return (
         <View style={styles.container}>
-            
+            {/* 
             <View style={styles.containerGallery}>
                 <FlatList
                     numColumns={1}
@@ -70,6 +70,9 @@ function Home(props) {
                      
 
             </View>
+            
+            */}
+            
         </View>
     )
 }

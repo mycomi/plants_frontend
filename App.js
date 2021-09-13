@@ -75,6 +75,7 @@ export class App extends Component {
       )
     }
 
+
     if (!loggedIn) {
       return (
         <NavigationContainer>
@@ -86,6 +87,7 @@ export class App extends Component {
         </NavigationContainer>
       );
     }
+
 
     return (
       <Provider store={store}>

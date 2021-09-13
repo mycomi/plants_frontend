@@ -32,18 +32,27 @@ export class Main extends Component {
     render() {
         return (
             <Tab.Navigator initialRouteName="Home" labeled="false">
+                
                 <Tab.Screen name="Home" component={HomeScreen} 
                 options={{
                     tabBarIcon: ({color,size}) => (
                         <MaterialCommunityIcons name="home" color={color} size={26}/>
                     ),
                 }}/>
+
+                
+
+                {/* 
+                
                 <Tab.Screen name="Search" component={SearchScreen} navigation={this.props.navigation}
                 options={{
                     tabBarIcon: ({color,size}) => (
                         <MaterialCommunityIcons name="magnify" color={color} size={26}/>
                     ),
                 }}/>
+
+                */}
+                
                 <Tab.Screen name="MyPlants" component={MyPlantsScreen} 
                 listeners={({ navigation }) => ({
                     tabPress: event => {
